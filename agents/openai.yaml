@@ -1,0 +1,4 @@
+interface:
+  display_name: "HK-US Institutional Concentration"
+  short_description: "Analyze HK-US institutional ownership concentration"
+  default_prompt: "Use $skill-hk-us-institutional-concentration. Complete its mandatory research gate before calculating or interpreting results; verify snapshot dates, coverage, anomaly handling, ownership breadth, and holder dominance."
