@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "mode": "api",
+  "panel_rows": 4,
+  "ranking_rows": 80,
+  "missing_concentration": 0,
+  "duplicate_keys": 0,
+  "warnings": [],
+  "sdk_version": "0.0.12",
+  "markets": [
+    "hk",
+    "us"
+  ],
+  "data_anomaly_rows": 0,
+  "symbol_count": 4,
+  "symbols_preview": [
+    "0005.HK",
+    "0700.HK",
+    "AAPL",
+    "MSFT"
+  ]
+}

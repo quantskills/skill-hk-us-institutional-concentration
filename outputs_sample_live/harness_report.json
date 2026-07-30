@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": {
+    "required_files": true,
+    "nonempty_panel": true,
+    "required_columns": true,
+    "unique_keys": true,
+    "valid_markets": true,
+    "concentration_coverage": true,
+    "anomalies_explicit": true,
+    "valid_structure": true,
+    "valid_confidence": true,
+    "quality_report_pass": true
+  }
+}

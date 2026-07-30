@@ -1,0 +1,12 @@
+﻿symbol,holding_date,currency,investor_name,investor_category,investor_type,investment_activeness_orientation,turnover_rating,turnover_ratio,total_equity_assets,sharehold,outstanding_ratio,hold_portfolio_ratio,sharehold_value,filing_type,sharehold_change,sharehold_value_change,outstanding_ratio_change,sharehold_change_ratio,prev_sharehold,prev_outstanding_ratio,prev_sharehold_value,prev_holding_date,prev_filing_type
+AAPL,20250402,USD,Williams (Jeffrey E),Strategic Entities,Individual Investor,,LOW,0.0,82863100.0,389944.0,0.0027,100.0,82863100.0,Insider Update,0.0,0.0,100.0,0.0,389944.0,0.0027,92026784.0,20250102,Proxy
+AAPL,20251107,USD,Kondo (Christopher),Strategic Entities,Individual Investor,,MED,72.7285,2741932.05,9833.0,0.0001,100.0,2741932.05,Insider Update,-3752.0,-1046245.2,100.0,-27.62,13585.0,0.0001,3672976.45,20251015,Insider Update
+AAPL,20251231,USD,"O'Domhnaill Enterprises, Inc",Strategic Entities,Individual Investor,Passive,,,106798375.92,5303.0,0.0,1.35,1441673.58,13F,5303.0,1441673.58,,0.0,,,,,
+MSFT,20250930,USD,Hoffman (Reid G),Strategic Entities,Individual Investor,,LOW,0.2561,65066836.41,15905.0,0.0002,12.66,8237994.75,Proxy,0.0,0.0,100.0,0.0,15905.0,0.0002,6843921.5,20240930,Proxy
+MSFT,20250930,USD,Pritzker (Penny S),Strategic Entities,Individual Investor,,LOW,0.0,8506220.5,12000.0,0.0002,73.07,6215400.0,Proxy,0.0,0.0,100.0,0.0,12000.0,0.0002,5163600.0,20240930,Proxy
+MSFT,20250930,USD,Walmsley (Emma Natasha),Strategic Entities,Individual Investor,,LOW,6.0689,64957331.04,9913.0,0.0001,7.9,5134438.35,Proxy,0.0,0.0,100.0,0.0,9913.0,0.0001,4265563.9,20240930,Proxy
+MSFT,20250930,USD,Johnston (Hugh F),Strategic Entities,Individual Investor,,LOW,13.4319,8277669.85,7750.0,0.0001,48.49,4014112.5,Proxy,0.0,0.0,100.0,0.0,7750.0,0.0001,3334825.0,20240930,Proxy
+MSFT,20250930,USD,Rainey (John D),Strategic Entities,Individual Investor,,HIGH,123.6916,43712603.63,6498.0,0.0001,7.7,3365639.1,Proxy,6498.0,3365639.1,,0.0,,,,,
+MSFT,20250930,USD,Peterson (Sandra E),Strategic Entities,Individual Investor,,LOW,0.0,2796930.0,5400.0,0.0001,100.0,2796930.0,Proxy,0.0,0.0,100.0,0.0,5400.0,0.0001,2323620.0,20240930,Proxy
+MSFT,20251110,USD,Nadella (Satya),Strategic Entities,Individual Investor,,LOW,2.5435,443655156.05,896595.0,0.0121,100.0,441133705.95,Insider Update,-3977.0,-1956723.77,100.0,-0.44,900572.0,0.0121,466451267.4,20250930,Proxy
+MSFT,20251231,USD,"O'Domhnaill Enterprises, Inc",Strategic Entities,Individual Investor,Passive,,,106798375.92,4164.0,0.0001,1.89,2013793.68,13F,4164.0,2013793.68,,0.0,,,,,

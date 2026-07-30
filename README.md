@@ -138,8 +138,8 @@ Counts depend on source coverage and run date and may change in future releases.
 
 ## GitHub 上传说明 / GitHub Upload Notes
 
-仓库中的 `.gitignore` 会排除全样本原始明细、完整机构持股面板及完整股东排名文件，以避免提交体积过大的文件；本地文件不会被删除。小型模拟/实盘示例、质量报告及自动验收结果仍可正常上传。全样本数据可通过上述命令重新生成。  
-The included `.gitignore` excludes full-universe raw detail, the complete institutional panel, and the complete investor-ranking file without deleting local files. Small examples, quality reports, and acceptance-test results remain uploadable. Full-sample data can be regenerated with the commands above.
+本仓库包含全样本原始明细、完整机构持股面板、完整股东排名、小型示例、质量报告及自动验收结果，以支持结果复核和完整复现。`.gitignore` 仅排除本地凭据、密钥、临时输出和系统缓存。  
+This repository includes full-universe raw detail, the complete institutional panel and investor ranking, small examples, quality reports, and acceptance-test results for verification and reproducibility. The `.gitignore` excludes only local credentials, keys, ad-hoc outputs, and system caches.
 
 ## 研究规范 / Research Safeguards
 

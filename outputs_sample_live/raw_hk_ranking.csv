@@ -1,0 +1,41 @@
+﻿symbol,investor_name,investor_type,investor_outstanding_ratio,sharehold,sharehold_change,info_date,turnover_rating,rank,currency
+0005.HK,"BlackRock Institutional Trust Company, N.A.",Investment Advisor,9.2317,1586341122.0,0.0,20260219,LOW,1,USD
+0005.HK,"Ping An Asset Management Co., Ltd.",Investment Advisor,8.7443,1502584731.0,0.0,20260219,LOW,2,USD
+0005.HK,Mellon Investments Corporation,Investment Advisor/Hedge Fund,6.0285,1035915129.0,0.0,20260219,LOW,3,USD
+0005.HK,"Vanguard Capital Management, LLC",Investment Advisor,3.092,531318507.0,7734469.0,20260418,LOW,4,USD
+0005.HK,Norges Bank Investment Management (NBIM),Sovereign Wealth Fund,2.2401,384922546.0,-23281170.0,20260630,LOW,5,USD
+0005.HK,BlackRock Investment Management (UK) Ltd.,Investment Advisor/Hedge Fund,2.0836,358044565.0,8407608.0,20260630,LOW,6,USD
+0005.HK,BlackRock Advisors (UK) Limited,Investment Advisor/Hedge Fund,1.5743,270519528.0,3886706.0,20260630,LOW,7,USD
+0005.HK,State Street Investment Management (UK),Investment Advisor/Hedge Fund,0.9824,168819320.0,6190139.0,20260421,LOW,8,USD
+0005.HK,DWS Investment GmbH,Investment Advisor/Hedge Fund,0.7691,132150677.0,-532679.0,20260630,LOW,9,USD
+0005.HK,Legal & General Investment Management Ltd.,Investment Advisor/Hedge Fund,0.7625,131017838.0,-906553.0,20260630,LOW,10,USD
+0005.HK,Vanguard Global Advisers LLC,Investment Advisor,0.7475,128449129.0,1072370.0,20260414,LOW,11,USD
+0005.HK,Hang Seng Investment Management Ltd.,Investment Advisor,0.6942,119286759.0,-43667868.0,20260630,LOW,12,USD
+0005.HK,"Geode Capital Management, L.L.C.",Investment Advisor/Hedge Fund,0.6174,106083825.0,2554062.0,20260421,LOW,13,USD
+0005.HK,Aviva Investors Global Services Limited,Investment Advisor/Hedge Fund,0.462,79392315.0,5677983.0,20260630,LOW,14,USD
+0005.HK,State Street Investment Management (US),Investment Advisor/Hedge Fund,0.448,76987525.0,-55492.0,20260630,LOW,15,USD
+0005.HK,GIC Private Limited,Sovereign Wealth Fund,0.416,71484140.0,9507846.0,20260630,LOW,16,USD
+0005.HK,Vanguard Asset Management Ltd,Investment Advisor,0.3566,61277375.0,-1273154.0,20260630,LOW,17,USD
+0005.HK,M&G Investment Management Ltd.,Investment Advisor,0.3459,59433495.0,0.0,20260630,LOW,18,USD
+0005.HK,UBS Asset Management (UK) Ltd.,Investment Advisor,0.329,56540485.0,-4322051.0,20260421,LOW,19,USD
+0005.HK,"Charles Schwab Investment Management, Inc.",Investment Advisor,0.2944,50581623.0,2084872.0,20260414,LOW,20,USD
+0700.HK,Prosus NV,Corporation,22.8706,2079512000.0,-25741100.0,20251231,LOW,1,CNY
+0700.HK,Ma (Huateng),Individual Investor,8.8519,804859700.0,0.0,20251231,LOW,2,CNY
+0700.HK,"Vanguard Capital Management, LLC",Investment Advisor,2.1829,198481590.0,2277200.0,20260630,LOW,3,CNY
+0700.HK,"BlackRock Institutional Trust Company, N.A.",Investment Advisor,1.5188,138093926.0,-2718758.0,20260630,LOW,4,CNY
+0700.HK,Norges Bank Investment Management (NBIM),Sovereign Wealth Fund,1.3486,122620378.0,-7645705.0,20251231,LOW,5,CNY
+0700.HK,Aviva Investors Global Services Limited,Investment Advisor/Hedge Fund,1.3063,118775226.0,-8300.0,20260630,LOW,6,CNY
+0700.HK,Fidelity Management & Research Company LLC,Investment Advisor,0.85,77282438.0,10061.0,20260630,LOW,7,CNY
+0700.HK,BlackRock Advisors (UK) Limited,Investment Advisor/Hedge Fund,0.7263,66037041.0,500000.0,20260630,LOW,8,CNY
+0700.HK,E Fund Management Co. Ltd.,Investment Advisor,0.5507,50074758.0,-1452393.0,20260430,LOW,9,CNY
+0700.HK,Capital World Investors,Investment Advisor,0.5287,48069029.0,-1682279.0,20260630,LOW,10,CNY
+0700.HK,"Geode Capital Management, L.L.C.",Investment Advisor/Hedge Fund,0.4163,37847714.0,-48175.0,20260630,LOW,11,CNY
+0700.HK,Hang Seng Investment Management Ltd.,Investment Advisor,0.4081,37102845.0,989692.0,20260630,LOW,12,CNY
+0700.HK,MFS Investment Management,Investment Advisor/Hedge Fund,0.3447,31337623.0,-54200.0,20260630,LOW,13,CNY
+0700.HK,"Fullgoal Fund Management Co., Ltd.",Investment Advisor/Hedge Fund,0.3395,30867018.0,7431394.0,20251231,LOW,14,CNY
+0700.HK,Capital Research Global Investors,Investment Advisor,0.3037,27609999.0,-685000.0,20260630,LOW,15,CNY
+0700.HK,Baillie Gifford & Co.,Investment Advisor,0.2899,26360250.0,-102400.0,20260531,LOW,16,CNY
+0700.HK,Schroder Investment Management Ltd. (SIM),Investment Advisor/Hedge Fund,0.2761,25106433.0,-64400.0,20260630,LOW,17,CNY
+0700.HK,"Dimensional Fund Advisors, L.P.",Investment Advisor/Hedge Fund,0.275,25002600.0,67300.0,20260630,LOW,18,CNY
+0700.HK,"China Asset Management Co., Ltd.",Investment Advisor,0.2483,22575212.0,-39783.0,20260531,LOW,19,CNY
+0700.HK,Schroder Investment Management North America Inc.,Investment Advisor,0.2305,20954790.0,450100.0,20260531,LOW,20,CNY

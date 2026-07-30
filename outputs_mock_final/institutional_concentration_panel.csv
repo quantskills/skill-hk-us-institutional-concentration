@@ -1,0 +1,7 @@
+﻿symbol,market,concentration_pct,top20_concentration_pct,holder_hhi,largest_holder_pct,ranked_holder_count,concentration_gap_pct,has_data_anomaly,ownership_structure,evidence_count,data_confidence
+0700.HK,hk,71.8,68.8,0.0648,18.0,5,3.0,False,broad_institutional,4,high
+0005.HK,hk,66.4,62.400000000000006,0.06097032,17.46,5,4.0,False,broad_institutional,4,high
+1299.HK,hk,58.9,53.9,0.057257279999999994,16.919999999999998,5,5.0,False,broad_institutional,4,high
+AAPL,us,62.1,59.1,0.0648,18.0,5,3.0,False,broad_institutional,4,high
+MSFT,us,73.4,69.4,0.06097032,17.46,5,4.0,False,broad_institutional,4,high
+JPM,us,55.7,50.7,0.057257279999999994,16.919999999999998,5,5.0,False,broad_institutional,4,high

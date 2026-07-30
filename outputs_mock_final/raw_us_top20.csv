@@ -1,0 +1,4 @@
+﻿symbol,investor_count,concentration_pct,holdings,holdings_value
+AAPL,20,59.1,800000000,3200000000
+MSFT,20,69.4,900000000,3600000000
+JPM,20,50.7,1000000000,4000000000

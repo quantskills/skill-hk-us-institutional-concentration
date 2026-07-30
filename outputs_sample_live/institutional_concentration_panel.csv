@@ -1,0 +1,5 @@
+﻿symbol,market,concentration_pct,top20_concentration_pct,holder_hhi,largest_holder_pct,ranked_holder_count,concentration_gap_pct,has_data_anomaly,ownership_structure,evidence_count,data_confidence
+0005.HK,hk,52.6140000000002,40.2195,0.022401701129,9.2317,20,12.394500000000207,False,broad_institutional,4,high
+0700.HK,hk,57.3254000000005,43.8669,0.061486707603000006,22.8706,20,13.458500000000498,False,dominant_holder,4,high
+AAPL,us,67.7177000000095,34.4831,0.011020301253,6.4943,20,33.2346000000095,False,broad_institutional,4,high
+MSFT,us,76.6655000000092,35.7081,0.011462024487,6.4961,20,40.9574000000092,False,broad_institutional,4,high

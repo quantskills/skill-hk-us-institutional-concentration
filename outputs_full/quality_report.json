@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "mode": "api",
+  "panel_rows": 9938,
+  "ranking_rows": 163179,
+  "missing_concentration": 358,
+  "data_anomaly_rows": 1290,
+  "duplicate_keys": 0,
+  "warnings": [
+    "Skipped HK shareholder reports in full-universe mode; use --include-shareholder-reports to request them.",
+    "Skipped US shareholder reports in full-universe mode; use --include-shareholder-reports to request them."
+  ],
+  "sdk_version": "0.0.12",
+  "markets": [
+    "hk",
+    "us"
+  ],
+  "symbol_count": 9938,
+  "symbols_preview": [
+    "0001.HK",
+    "0002.HK",
+    "0003.HK",
+    "0004.HK",
+    "0005.HK",
+    "0006.HK",
+    "0007.HK",
+    "0008.HK",
+    "0010.HK",
+    "0011.HK",
+    "0012.HK",
+    "0013.HK",
+    "0014.HK",
+    "0016.HK",
+    "0017.HK",
+    "0018.HK",
+    "0019.HK",
+    "0020.HK",
+    "0021.HK",
+    "0022.HK"
+  ]
+}

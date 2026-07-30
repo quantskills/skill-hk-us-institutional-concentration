@@ -1,0 +1,81 @@
+﻿market,symbol,holder_name,holding_pct,rank
+hk,0005.HK,"BlackRock Institutional Trust Company, N.A.",9.2317,1
+hk,0005.HK,"Ping An Asset Management Co., Ltd.",8.7443,2
+hk,0005.HK,Mellon Investments Corporation,6.0285,3
+hk,0005.HK,"Vanguard Capital Management, LLC",3.092,4
+hk,0005.HK,Norges Bank Investment Management (NBIM),2.2401,5
+hk,0005.HK,BlackRock Investment Management (UK) Ltd.,2.0836,6
+hk,0005.HK,BlackRock Advisors (UK) Limited,1.5743,7
+hk,0005.HK,State Street Investment Management (UK),0.9824,8
+hk,0005.HK,DWS Investment GmbH,0.7691,9
+hk,0005.HK,Legal & General Investment Management Ltd.,0.7625,10
+hk,0005.HK,Vanguard Global Advisers LLC,0.7475,11
+hk,0005.HK,Hang Seng Investment Management Ltd.,0.6942,12
+hk,0005.HK,"Geode Capital Management, L.L.C.",0.6174,13
+hk,0005.HK,Aviva Investors Global Services Limited,0.462,14
+hk,0005.HK,State Street Investment Management (US),0.448,15
+hk,0005.HK,GIC Private Limited,0.416,16
+hk,0005.HK,Vanguard Asset Management Ltd,0.3566,17
+hk,0005.HK,M&G Investment Management Ltd.,0.3459,18
+hk,0005.HK,UBS Asset Management (UK) Ltd.,0.329,19
+hk,0005.HK,"Charles Schwab Investment Management, Inc.",0.2944,20
+hk,0700.HK,Prosus NV,22.8706,1
+hk,0700.HK,Ma (Huateng),8.8519,2
+hk,0700.HK,"Vanguard Capital Management, LLC",2.1829,3
+hk,0700.HK,"BlackRock Institutional Trust Company, N.A.",1.5188,4
+hk,0700.HK,Norges Bank Investment Management (NBIM),1.3486,5
+hk,0700.HK,Aviva Investors Global Services Limited,1.3063,6
+hk,0700.HK,Fidelity Management & Research Company LLC,0.85,7
+hk,0700.HK,BlackRock Advisors (UK) Limited,0.7263,8
+hk,0700.HK,E Fund Management Co. Ltd.,0.5507,9
+hk,0700.HK,Capital World Investors,0.5287,10
+hk,0700.HK,"Geode Capital Management, L.L.C.",0.4163,11
+hk,0700.HK,Hang Seng Investment Management Ltd.,0.4081,12
+hk,0700.HK,MFS Investment Management,0.3447,13
+hk,0700.HK,"Fullgoal Fund Management Co., Ltd.",0.3395,14
+hk,0700.HK,Capital Research Global Investors,0.3037,15
+hk,0700.HK,Baillie Gifford & Co.,0.2899,16
+hk,0700.HK,Schroder Investment Management Ltd. (SIM),0.2761,17
+hk,0700.HK,"Dimensional Fund Advisors, L.P.",0.275,18
+hk,0700.HK,"China Asset Management Co., Ltd.",0.2483,19
+hk,0700.HK,Schroder Investment Management North America Inc.,0.2305,20
+us,AAPL,"Vanguard Capital Management, LLC",6.4943,1
+us,AAPL,"BlackRock Institutional Trust Company, N.A.",4.9421,2
+us,AAPL,State Street Investment Management (US),4.1011,3
+us,AAPL,"Geode Capital Management, L.L.C.",2.4377,4
+us,AAPL,"Vanguard Portfolio Management, LLC",2.2566,5
+us,AAPL,Fidelity Management & Research Company LLC,1.9095,6
+us,AAPL,Berkshire Hathaway Inc.,1.5518,7
+us,AAPL,Norges Bank Investment Management (NBIM),1.309,8
+us,AAPL,"T. Rowe Price Associates, Inc.",1.2211,9
+us,AAPL,Invesco Capital Management LLC,1.053,10
+us,AAPL,JP Morgan Asset Management,1.0256,11
+us,AAPL,BlackRock Asset Management Ireland Limited,0.8554,12
+us,AAPL,Invesco Capital Management (QQQ Trust),0.7689,13
+us,AAPL,"Northern Trust Investments, Inc.",0.7371,14
+us,AAPL,Legal & General Investment Management Ltd.,0.7362,15
+us,AAPL,"Charles Schwab Investment Management, Inc.",0.6968,16
+us,AAPL,Morgan Stanley Smith Barney LLC,0.6822,17
+us,AAPL,"Goldman Sachs Asset Management, L.P.",0.5951,18
+us,AAPL,Vanguard Fiduciary Trust Co,0.5732,19
+us,AAPL,BlackRock Investment Management (UK) Ltd.,0.5364,20
+us,MSFT,"Vanguard Capital Management, LLC",6.4961,1
+us,MSFT,"BlackRock Institutional Trust Company, N.A.",5.0207,2
+us,MSFT,State Street Investment Management (US),4.1288,3
+us,MSFT,Fidelity Management & Research Company LLC,2.4935,4
+us,MSFT,"Geode Capital Management, L.L.C.",2.4584,5
+us,MSFT,"Vanguard Portfolio Management, LLC",2.2547,6
+us,MSFT,"T. Rowe Price Associates, Inc.",1.434,7
+us,MSFT,Norges Bank Investment Management (NBIM),1.4103,8
+us,MSFT,Capital Research Global Investors,1.2936,9
+us,MSFT,JP Morgan Asset Management,1.0379,10
+us,MSFT,Invesco Capital Management LLC,1.03,11
+us,MSFT,BlackRock Asset Management Ireland Limited,0.8711,12
+us,MSFT,Capital World Investors,0.8311,13
+us,MSFT,Invesco Capital Management (QQQ Trust),0.7689,14
+us,MSFT,"Northern Trust Investments, Inc.",0.7437,15
+us,MSFT,Capital International Investors,0.7382,16
+us,MSFT,"Wellington Management Company, LLP",0.71,17
+us,MSFT,"Charles Schwab Investment Management, Inc.",0.707,18
+us,MSFT,Legal & General Investment Management Ltd.,0.6766,19
+us,MSFT,Morgan Stanley Smith Barney LLC,0.6035,20

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "mode": "mock",
+  "panel_rows": 6,
+  "ranking_rows": 30,
+  "missing_concentration": 0,
+  "data_anomaly_rows": 0,
+  "duplicate_keys": 0,
+  "warnings": [],
+  "sdk_version": null,
+  "markets": [
+    "hk",
+    "us"
+  ],
+  "symbol_count": 6,
+  "symbols_preview": [
+    "0700.HK",
+    "0005.HK",
+    "1299.HK",
+    "AAPL",
+    "MSFT",
+    "JPM"
+  ]
+}

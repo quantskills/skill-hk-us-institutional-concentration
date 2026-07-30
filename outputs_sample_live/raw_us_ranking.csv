@@ -1,0 +1,41 @@
+﻿symbol,currency,investor_name,investor_type,investor_outstanding_ratio,sharehold,sharehold_change,info_date,turnover_rating,rank
+AAPL,USD,"Vanguard Capital Management, LLC",Investment Advisor,6.4943,953847648.0,-3267432.0,20260331,LOW,1
+AAPL,USD,"BlackRock Institutional Trust Company, N.A.",Investment Advisor,4.9421,725869440.0,-9486132.0,20260331,LOW,2
+AAPL,USD,State Street Investment Management (US),Investment Advisor/Hedge Fund,4.1011,602341409.0,-1715096.0,20260331,LOW,3
+AAPL,USD,"Geode Capital Management, L.L.C.",Investment Advisor/Hedge Fund,2.4377,358032517.0,1866103.0,20251231,LOW,4
+AAPL,USD,"Vanguard Portfolio Management, LLC",Investment Advisor,2.2566,331437055.0,331437055.0,20260331,LOW,5
+AAPL,USD,Fidelity Management & Research Company LLC,Investment Advisor,1.9095,280458793.0,1637277.0,20251231,LOW,6
+AAPL,USD,Berkshire Hathaway Inc.,Holding Company,1.5518,227917808.0,-10294956.0,20251231,LOW,7
+AAPL,USD,Norges Bank Investment Management (NBIM),Sovereign Wealth Fund,1.309,192255086.0,2450266.0,20251231,LOW,8
+AAPL,USD,"T. Rowe Price Associates, Inc.",Investment Advisor,1.2211,179340662.0,-2435547.0,20260331,LOW,9
+AAPL,USD,Invesco Capital Management LLC,Investment Advisor,1.053,154652458.0,-9574792.0,20260331,LOW,10
+AAPL,USD,JP Morgan Asset Management,Investment Advisor,1.0256,150630721.0,-2513200.0,20260331,LOW,11
+AAPL,USD,BlackRock Asset Management Ireland Limited,Investment Advisor,0.8554,125630739.0,982198.0,20260331,LOW,12
+AAPL,USD,Invesco Capital Management (QQQ Trust),Investment Advisor,0.7689,112932408.0,-2359394.0,20260630,LOW,13
+AAPL,USD,"Northern Trust Investments, Inc.",Investment Advisor/Hedge Fund,0.7371,108265332.0,-1281278.0,20260331,LOW,14
+AAPL,USD,Legal & General Investment Management Ltd.,Investment Advisor/Hedge Fund,0.7362,108127380.0,-2325087.0,20260331,LOW,15
+AAPL,USD,"Charles Schwab Investment Management, Inc.",Investment Advisor,0.6968,102344793.0,2556297.0,20260331,LOW,16
+AAPL,USD,Morgan Stanley Smith Barney LLC,Investment Advisor,0.6822,100197945.0,250567.0,20251231,LOW,17
+AAPL,USD,"Goldman Sachs Asset Management, L.P.",Investment Advisor,0.5951,87400912.0,1294976.0,20251231,LOW,18
+AAPL,USD,Vanguard Fiduciary Trust Co,Investment Advisor,0.5732,84194668.0,84194668.0,20260331,LOW,19
+AAPL,USD,BlackRock Investment Management (UK) Ltd.,Investment Advisor/Hedge Fund,0.5364,78789914.0,1232300.0,20260331,LOW,20
+MSFT,USD,"Vanguard Capital Management, LLC",Investment Advisor,6.4961,482558086.0,1059750.0,20260331,LOW,1
+MSFT,USD,"BlackRock Institutional Trust Company, N.A.",Investment Advisor,5.0207,372961374.0,-5767450.0,20260331,LOW,2
+MSFT,USD,State Street Investment Management (US),Investment Advisor/Hedge Fund,4.1288,306708289.0,557681.0,20260331,LOW,3
+MSFT,USD,Fidelity Management & Research Company LLC,Investment Advisor,2.4935,185224593.0,-10096046.0,20251231,LOW,4
+MSFT,USD,"Geode Capital Management, L.L.C.",Investment Advisor/Hedge Fund,2.4584,182618400.0,1911142.0,20251231,LOW,5
+MSFT,USD,"Vanguard Portfolio Management, LLC",Investment Advisor,2.2547,167490848.0,167490848.0,20260331,LOW,6
+MSFT,USD,"T. Rowe Price Associates, Inc.",Investment Advisor,1.434,106522748.0,-8198391.0,20260331,LOW,7
+MSFT,USD,Norges Bank Investment Management (NBIM),Sovereign Wealth Fund,1.4103,104761241.0,3248047.0,20251231,LOW,8
+MSFT,USD,Capital Research Global Investors,Investment Advisor,1.2936,96093061.0,22768626.0,20260331,LOW,9
+MSFT,USD,JP Morgan Asset Management,Investment Advisor,1.0379,77101967.0,-19619301.0,20260331,LOW,10
+MSFT,USD,Invesco Capital Management LLC,Investment Advisor,1.03,76510237.0,-4384077.0,20260331,LOW,11
+MSFT,USD,BlackRock Asset Management Ireland Limited,Investment Advisor,0.8711,64709146.0,330281.0,20260331,LOW,12
+MSFT,USD,Capital World Investors,Investment Advisor,0.8311,61734339.0,-2731828.0,20260331,LOW,13
+MSFT,USD,Invesco Capital Management (QQQ Trust),Investment Advisor,0.7689,57117911.0,-1191746.0,20260630,LOW,14
+MSFT,USD,"Northern Trust Investments, Inc.",Investment Advisor/Hedge Fund,0.7437,55245432.0,-263543.0,20260331,LOW,15
+MSFT,USD,Capital International Investors,Investment Advisor,0.7382,54837522.0,-26747859.0,20260331,LOW,16
+MSFT,USD,"Wellington Management Company, LLP",Investment Advisor/Hedge Fund,0.71,52742167.0,3832724.0,20260331,LOW,17
+MSFT,USD,"Charles Schwab Investment Management, Inc.",Investment Advisor,0.707,52519324.0,1587748.0,20260331,LOW,18
+MSFT,USD,Legal & General Investment Management Ltd.,Investment Advisor/Hedge Fund,0.6766,50263312.0,-829309.0,20260331,LOW,19
+MSFT,USD,Morgan Stanley Smith Barney LLC,Investment Advisor,0.6035,44830206.0,2753709.0,20251231,LOW,20
