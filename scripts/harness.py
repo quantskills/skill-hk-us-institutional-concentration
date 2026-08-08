@@ -13,17 +13,19 @@ def main() -> None:
     args = p.parse_args()
     root = Path(args.output_dir)
     required = ["institutional_concentration_panel.csv", "investor_ranking.csv",
-                "shareholder_reports.csv", "quality_report.json"]
+                "shareholder_reports.csv", "issuer_dedup_exclusions.csv", "quality_report.json"]
     checks = {"required_files": all((root / x).is_file() for x in required)}
     if checks["required_files"]:
         panel = pd.read_csv(root / required[0])
+        reports = pd.read_csv(root / "shareholder_reports.csv")
         quality = json.loads((root / "quality_report.json").read_text(encoding="utf-8"))
         checks.update({
             "nonempty_panel": not panel.empty,
             "required_columns": {"market", "symbol", "concentration_pct",
                                  "top20_concentration_pct", "holder_hhi",
                                  "ownership_structure", "evidence_count",
-                                 "data_confidence", "has_data_anomaly"}.issubset(panel.columns),
+                                 "data_confidence", "has_data_anomaly", "issuer_key",
+                                 "listing_type", "is_primary_listing"}.issubset(panel.columns),
             "unique_keys": bool(not panel.duplicated(["market", "symbol"]).any()),
             "valid_markets": set(panel["market"]).issubset({"hk", "us"}),
             "concentration_coverage": bool(panel["concentration_pct"].notna().mean() >= 0.90),
@@ -40,6 +42,16 @@ def main() -> None:
             "valid_confidence": set(panel["data_confidence"].dropna()).issubset({
                 "low", "medium", "high"}),
             "quality_report_pass": quality.get("status") == "PASS",
+            "unique_issuer_keys": bool(not panel.duplicated("issuer_key").any()),
+            "thirteen_f_lag_documented": quality.get("thirteen_f_lag_days") == 45,
+            "report_timing_columns": {"source_period_end", "availability_date",
+                                      "disclosure_lag_days", "point_in_time_eligible"}.issubset(reports.columns),
+            "thirteen_f_lag_applied": bool(
+                reports.loc[
+                    reports.get("filing_type", pd.Series("", index=reports.index)).astype(str).str.contains("13F", case=False),
+                    "disclosure_lag_days",
+                ].eq(45).all()
+            ),
         })
     status = "PASS" if checks and all(checks.values()) else "FAIL"
     result = {"status": status, "checks": checks}

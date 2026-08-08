@@ -4,14 +4,19 @@
   "panel_rows": 4,
   "ranking_rows": 80,
   "missing_concentration": 0,
+  "data_anomaly_rows": 0,
   "duplicate_keys": 0,
-  "warnings": [],
-  "sdk_version": "0.0.12",
+  "duplicate_issuers_excluded": 0,
+  "issuer_identity_fallback_rows": 4,
+  "thirteen_f_rows": 2,
+  "thirteen_f_lag_days": 45,
+  "warnings": [
+    "Rebuilt from preserved raw extracts; issuer fallback means ADR/local pairs cannot be inferred without stable issuer metadata."
+  ],
   "markets": [
     "hk",
     "us"
   ],
-  "data_anomaly_rows": 0,
   "symbol_count": 4,
   "symbols_preview": [
     "0005.HK",

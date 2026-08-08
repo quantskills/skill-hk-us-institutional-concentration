@@ -6,6 +6,10 @@
   "missing_concentration": 0,
   "data_anomaly_rows": 0,
   "duplicate_keys": 0,
+  "duplicate_issuers_excluded": 0,
+  "issuer_identity_fallback_rows": 6,
+  "thirteen_f_rows": 3,
+  "thirteen_f_lag_days": 45,
   "warnings": [],
   "sdk_version": null,
   "markets": [
@@ -14,11 +18,11 @@
   ],
   "symbol_count": 6,
   "symbols_preview": [
-    "0700.HK",
     "0005.HK",
+    "0700.HK",
     "1299.HK",
     "AAPL",
-    "MSFT",
-    "JPM"
+    "JPM",
+    "MSFT"
   ]
 }

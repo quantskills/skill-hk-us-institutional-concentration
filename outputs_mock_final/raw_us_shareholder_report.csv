@@ -1,4 +1,4 @@
-﻿symbol,report_date,holder_name,holding_pct,currency
-AAPL,20251231,US Holder 1,18.0,USD
-MSFT,20251231,US Holder 1,17.46,USD
-JPM,20251231,US Holder 1,16.919999999999998,USD
+﻿symbol,report_date,holder_name,holding_pct,currency,filing_type
+AAPL,20251231,US Holder 1,18.0,USD,13F
+MSFT,20251231,US Holder 1,17.46,USD,13F
+JPM,20251231,US Holder 1,16.919999999999998,USD,13F

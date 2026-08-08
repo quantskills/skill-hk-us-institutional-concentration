@@ -1,7 +1,7 @@
-﻿market,symbol,report_date,holder_name,holding_pct,currency
-hk,0700.HK,20251231,HK Holder 1,18.0,HKD
-hk,0005.HK,20251231,HK Holder 1,17.46,HKD
-hk,1299.HK,20251231,HK Holder 1,16.919999999999998,HKD
-us,AAPL,20251231,US Holder 1,18.0,USD
-us,MSFT,20251231,US Holder 1,17.46,USD
-us,JPM,20251231,US Holder 1,16.919999999999998,USD
+﻿market,symbol,report_date,holder_name,holding_pct,currency,filing_type,source_period_end,disclosure_lag_days,availability_date,point_in_time_eligible
+hk,0700.HK,20251231,HK Holder 1,18.0,HKD,Shareholder filing,2025-12-31,0,2025-12-31,True
+hk,0005.HK,20251231,HK Holder 1,17.46,HKD,Shareholder filing,2025-12-31,0,2025-12-31,True
+hk,1299.HK,20251231,HK Holder 1,16.919999999999998,HKD,Shareholder filing,2025-12-31,0,2025-12-31,True
+us,AAPL,20251231,US Holder 1,18.0,USD,13F,2025-12-31,45,2026-02-14,True
+us,MSFT,20251231,US Holder 1,17.46,USD,13F,2025-12-31,45,2026-02-14,True
+us,JPM,20251231,US Holder 1,16.919999999999998,USD,13F,2025-12-31,45,2026-02-14,True

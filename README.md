@@ -14,6 +14,8 @@ High aggregate ownership is not treated as automatically good or bad; the skill 
 - 最大股东持股比例 / Largest-holder percentage
 - 股东层面的赫芬达尔指数 / Holder-level Herfindahl-Hirschman Index (HHI)
 - 股东排名数据标准化 / Ranked-holder normalization
+- ADR 与本地普通股的发行人级去重 / Issuer-level ADR and local-share deduplication
+- 13F 报告期末后 45 天可得性滞后 / 45-day 13F availability lag
 - 持股结构分类 / Ownership-structure classification
 - 证据数量与数据置信度标签 / Evidence-count and confidence labels
 - 明确标记缺失数据及异常值 / Explicit missing-data and anomaly states
@@ -121,6 +123,7 @@ Full-universe mode skips the larger dated shareholder-report extract by default;
 | `institutional_concentration_panel.csv` | 公司层面的广度、主导性、结构及置信度 / Company-level breadth, dominance, structure, and confidence |
 | `investor_ranking.csv` | 标准化的股东排名明细 / Normalized ranked-holder detail |
 | `shareholder_reports.csv` | 按需生成的带日期股东报告 / Dated shareholder-report detail when requested |
+| `issuer_dedup_exclusions.csv` | ADR/本地股发行人去重排除明细 / ADR-local issuer deduplication exclusions |
 | `raw_*.csv` | 未修改的 API 原始数据 / Unmodified API extracts |
 | `quality_report.json` | 覆盖率、缺失值、重复值、异常及警告 / Coverage, missing values, duplicates, anomalies, and warnings |
 | `harness_report.json` | 自动验收结果 / Automated acceptance-test result |
@@ -159,6 +162,9 @@ Standard concentration APIs provide current snapshots; a current snapshot must n
 
 只有在每个远期收益区间开始前存在真实的带日期持股快照时，历史业绩分析才有效；否则，本技能提供的是严谨的横截面持股诊断，而非伪回测。  
 Historical performance analysis is valid only when dated ownership snapshots precede every forward-return period; otherwise, the result is a rigorous cross-sectional diagnosis rather than a pseudo-backtest.
+
+美股 13F 数据以报告期末后 45 个日历日作为信息可得日；历史联结不得使用报告期末日提前获取持仓信息。ADR 与本地普通股在存在稳定发行人标识时仅保留一个代表性上市地点。
+US 13F data uses period-end plus 45 calendar days as its availability date; historical joins must not use the earlier period end. When stable issuer identifiers exist, an ADR and its local ordinary share are represented by one retained listing.
 
 ## 局限性 / Limitations
 

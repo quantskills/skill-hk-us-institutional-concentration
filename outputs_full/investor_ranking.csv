@@ -30234,7 +30234,6 @@ us,ACGLO,"First Command Advisory Services, Inc.",0.0026,17
 us,ACGLO,PNC Investments LLC,0.0024,18
 us,ACGLO,"KB Asset Management Co., Ltd.",0.0,19
 us,ACGLO,"American Century Investment Management, Inc.",0.0,20
-us,ACGLP,Arch Capital Group Ltd.,29.85,1
 us,ACH,"Coliseum Capital Management, L.L.C.",17.1065,1
 us,ACH,"BlackRock Institutional Trust Company, N.A.",6.2504,2
 us,ACH,Webb (Kevin M),5.5984,3
@@ -38544,7 +38543,6 @@ us,ARES_PB,Magnetar Capital Partners LP,1.2742,17
 us,ARES_PB,State Street Investment Management (US),1.2054,18
 us,ARES_PB,"Infrastructure Capital Advisors, LLC",1.1656,19
 us,ARES_PB,"Sculptor Capital Management, Inc",1.0995,20
-us,ARE_PE,"Alexandria Real Estate Equities, Inc.",0.0,1
 us,ARGX,Fidelity Management & Research Company LLC,7.7438,1
 us,ARGX,"T. Rowe Price Associates, Inc.",4.1213,2
 us,ARGX,Janus Henderson Investors,4.0643,3
@@ -46005,7 +46003,6 @@ us,BIOR,Morgan Stanley & Co. LLC,0.0,17
 us,BIOR,BofA Global Research (US),0.0,18
 us,BIOR,"Northern Trust Investments, Inc.",0.0,19
 us,BIOR,J.P. Morgan Securities LLC,0.0,20
-us,BIOT,Relativity Acquisition Sponsor LLC,12.1776,1
 us,BIOX,Bioceres SA,9.8177,1
 us,BIOX,"Ospraie Management, L.P.",9.7681,2
 us,BIOX,Solel Partners LP,7.1759,3
@@ -56239,8 +56236,6 @@ us,CLNN,Vanguard Fiduciary Trust Co,0.3421,17
 us,CLNN,Etherington (Robert Dee),0.329,18
 us,CLNN,"Parsons Capital Management, Inc.",0.2915,19
 us,CLNN,"BlackRock Institutional Trust Company, N.A.",0.2645,20
-us,CLNY_PB,"DigitalBridge Group, Inc.",0.0435,1
-us,CLNY_PE,"DigitalBridge Group, Inc.",0.0435,1
 us,CLOV,"BlackRock Institutional Trust Company, N.A.",6.3452,1
 us,CLOV,"Vanguard Capital Management, LLC",3.9404,2
 us,CLOV,"Geode Capital Management, L.L.C.",2.2719,3
@@ -64518,7 +64513,6 @@ us,DHR,Janus Henderson Investors,0.9232,17
 us,DHR,BlackRock Asset Management Ireland Limited,0.7954,18
 us,DHR,"BlackRock Investment Management, LLC",0.684,19
 us,DHR,"Charles Schwab Investment Management, Inc.",0.6735,20
-us,DHR_PA,Danaher Corp,0.0,1
 us,DHT,Fidelity Management & Research Company LLC,14.9774,1
 us,DHT,"Dimensional Fund Advisors, L.P.",6.2307,2
 us,DHT,BW Group Limited,4.8214,3
@@ -69820,7 +69814,6 @@ us,ENRD,"Moore Capital Management, LP",0.3927,17
 us,ENRD,The Quarry LP,0.3789,18
 us,ENRD,"Westchester Capital Management, LLC",0.345,19
 us,ENRD,Linden Advisors L.P.,0.3218,20
-us,ENRJ_P,"Ageagle Aerial Systems, Inc.",6.9166,1
 us,ENS,"BlackRock Institutional Trust Company, N.A.",11.6783,1
 us,ENS,"Vanguard Portfolio Management, LLC",6.5168,2
 us,ENS,"Vanguard Capital Management, LLC",4.537,3
@@ -71449,8 +71442,6 @@ us,ETSY,"UBS Financial Services, Inc.",1.854,17
 us,ETSY,"Geode Capital Management, L.L.C.",1.8352,18
 us,ETSY,Assenagon Asset Management S.A.,1.7001,19
 us,ETSY,"Dimensional Fund Advisors, L.P.",1.6583,20
-us,ET_PE,"Energy Transfer, L.P.",31.769,1
-us,ET_PI,"Energy Transfer, L.P.",31.769,1
 us,EU,Van Eck Associates Corporation,7.1933,1
 us,EU,Mirae Asset Global Investments (USA) LLC,6.7398,2
 us,EU,"BlackRock Institutional Trust Company, N.A.",4.5843,3
@@ -74881,7 +74872,6 @@ us,FITBI,ORG Partners LLC,0.0001,4
 us,FITBI,"Golden State Equity Partners, L.L.C",0.0001,5
 us,FITBI,"Studio Investment Management, LLC",0.0,6
 us,FITBI,"NBC Securities, Inc.",0.0,7
-us,FITBM,Fifth Third Bancorp,0.0,1
 us,FITBO,"Spectrum Asset Management, Inc.",0.5,1
 us,FITBO,PNC Investments LLC,0.0065,2
 us,FITBO,Thurston Springer Financial,0.005,3
@@ -74935,7 +74925,6 @@ us,FITB_PK,State Street Investment Management (US),0.0,12
 us,FITB_PK,Fidelity Management & Research Company LLC,0.0,13
 us,FITB_PK,"Goldman Sachs Asset Management, L.P.",0.0,14
 us,FITB_PK,"NBC Securities, Inc.",0.0,15
-us,FITB_PM,Fifth Third Bancorp,0.0,1
 us,FIVE,"BlackRock Institutional Trust Company, N.A.",8.1389,1
 us,FIVE,"Vanguard Capital Management, LLC",4.4743,2
 us,FIVE,"Vanguard Portfolio Management, LLC",4.3379,3
@@ -110719,26 +110708,6 @@ us,MZYX,Pennsylvania Public School Employees Retirement System,0.6667,4
 us,MZYX,DWS Investment GmbH,0.4167,5
 us,MZYX,"Deltec Asset Management, LLC",0.1667,6
 us,MZYX,Accelerate Financial Technologies Inc.,0.071,7
-us,NA,Jianping Kong LTD,12.571,1
-us,NA,Longling Capital Ltd,8.7594,2
-us,NA,FENBUSHI Inc.,7.7569,3
-us,NA,Golden Forest Management Ltd,7.6049,4
-us,NA,Star Spectrum Capital Ltd,5.8485,5
-us,NA,Ayrton Capital LLC,4.6788,6
-us,NA,Wlyl Ltd,3.6836,7
-us,NA,Nanoeco Ltd,2.2161,8
-us,NA,Mirae Asset Global Investments (USA) LLC,2.1149,9
-us,NA,Tong Qi Holding Ltd.,1.898,10
-us,NA,Zhang (Li),1.0246,11
-us,NA,Nanometa Ltd,0.7198,12
-us,NA,Carne Global Fund Managers (Ireland) Limited,0.5477,13
-us,NA,Chen (Bing),0.4943,14
-us,NA,Hu (Nan),0.1909,15
-us,NA,Morgan Stanley & Co. LLC,0.1604,16
-us,NA,"Jane Street Capital, L.L.C.",0.0966,17
-us,NA,XTX Markets LLC,0.0951,18
-us,NA,"Two Sigma Investments, LP",0.0892,19
-us,NA,Creand Wealth Management,0.0616,20
 us,NAAS,Timeswell LLC,0.654,1
 us,NAAS,Citadel Advisors LLC,0.0867,2
 us,NAAS,"Susquehanna International Group, LLP",0.0616,3
@@ -110928,6 +110897,26 @@ us,NAMSW,HRT Financial LP,,11
 us,NAMSW,"Monashee Investment Management, LLC",,12
 us,NAMSW,Laurion Capital Management LP,,13
 us,NAMSW,"CIBC Private Wealth Advisors, Inc.",,14
+us,NAN,Jianping Kong LTD,12.571,1
+us,NAN,Longling Capital Ltd,8.7594,2
+us,NAN,FENBUSHI Inc.,7.7569,3
+us,NAN,Golden Forest Management Ltd,7.6049,4
+us,NAN,Star Spectrum Capital Ltd,5.8485,5
+us,NAN,Ayrton Capital LLC,4.6788,6
+us,NAN,Wlyl Ltd,3.6836,7
+us,NAN,Nanoeco Ltd,2.2161,8
+us,NAN,Mirae Asset Global Investments (USA) LLC,2.1149,9
+us,NAN,Tong Qi Holding Ltd.,1.898,10
+us,NAN,Zhang (Li),1.0246,11
+us,NAN,Nanometa Ltd,0.7198,12
+us,NAN,Carne Global Fund Managers (Ireland) Limited,0.5477,13
+us,NAN,Chen (Bing),0.4943,14
+us,NAN,Hu (Nan),0.1909,15
+us,NAN,Morgan Stanley & Co. LLC,0.1604,16
+us,NAN,"Jane Street Capital, L.L.C.",0.0966,17
+us,NAN,XTX Markets LLC,0.0951,18
+us,NAN,"Two Sigma Investments, LP",0.0892,19
+us,NAN,Creand Wealth Management,0.0616,20
 us,NAT,"Dimensional Fund Advisors, L.P.",5.7567,1
 us,NAT,"BlackRock Institutional Trust Company, N.A.",4.8012,2
 us,NAT,Columbia Threadneedle Investments (UK),2.8495,3
@@ -115146,7 +115135,6 @@ us,NTRSO,PNC Investments LLC,0.0044,17
 us,NTRSO,Byrne Asset Management LLC,0.0025,18
 us,NTRSO,Heungkuk Asset Management Company Ltd.,0.0001,19
 us,NTRSO,"ClearBridge Investments, LLC",0.0,20
-us,NTRSP,Northern Trust Corporation,0.5673,1
 us,NTSK,"ICONIQ Capital, LLC",26.3153,1
 us,NTSK,"Sequoia Capital Global Equities Management, L.P.",4.3487,2
 us,NTSK,CPP Investments,3.8761,3
@@ -126276,8 +126264,6 @@ us,PSA_PS,"Goldman Sachs Asset Management, L.P.",0.0342,17
 us,PSA_PS,Duff & Phelps Investment Management Company,0.0055,18
 us,PSA_PS,BMO Asset Management Inc.,0.0,19
 us,PSA_PS,"American Century Investment Management, Inc.",0.0,20
-us,PSA_PT,Public Storage,35.088,1
-us,PSA_PU,Public Storage,35.088,1
 us,PSBD,Caravel Holdings LLC,12.7994,1
 us,PSBD,OV Management LLC,11.9858,2
 us,PSBD,"1248 Management, LLC",10.0888,3
@@ -133276,8 +133262,6 @@ us,RWT,Van Eck Associates Corporation,0.8755,17
 us,RWT,"Jane Street Capital, L.L.C.",0.7227,18
 us,RWT,Nordea Funds Oy,0.7007,19
 us,RWT,Vanguard Fiduciary Trust Co,0.6393,20
-us,RWTO,Redwood Trust Inc,2.9936,1
-us,RWTS,Redwood Trust Inc,2.9936,1
 us,RWT_PA,"Uniplan Investment Counsel, Inc.",2.107,1
 us,RWT_PA,"Infrastructure Capital Advisors, LLC",1.7967,2
 us,RWT_PA,"Invesco Advisers, Inc.",1.5385,3
@@ -155421,7 +155405,6 @@ us,VNOM,"Scout Investments, Inc.",0.9082,17
 us,VNOM,"T. Rowe Price Investment Management, Inc.",0.8808,18
 us,VNOM,Horizon Kinetics LLC,0.8681,19
 us,VNOM,"Epoch Investment Partners, Inc.",0.8147,20
-us,VNO_PK,Vornado Realty Trust,32.3864,1
 us,VNO_PL,"Infrastructure Capital Advisors, LLC",8.2684,1
 us,VNO_PL,"BlackRock Institutional Trust Company, N.A.",6.7262,2
 us,VNO_PL,Invesco Capital Management LLC,3.4973,3
@@ -157870,8 +157853,6 @@ us,WFC_PL,"Wellington Management Company, LLP",0.9056,17
 us,WFC_PL,"Thrivent Asset Management, LLC",0.7542,18
 us,WFC_PL,"First Eagle Investment Management, L.L.C.",0.6487,19
 us,WFC_PL,"Focus Partners Wealth, LLC",0.6308,20
-us,WFC_PO,Wells Fargo & Co,7.4344,1
-us,WFC_PX,Wells Fargo & Co,7.4344,1
 us,WFC_PY,"Estabrook Capital Management, L.L.C. (Grove Creek)",0.0072,1
 us,WFC_PY,ORG Partners LLC,0.0072,2
 us,WFC_PY,PNC Investments LLC,0.0067,3

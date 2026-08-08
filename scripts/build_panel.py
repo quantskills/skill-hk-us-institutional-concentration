@@ -75,7 +75,8 @@ def mock_data(market: str, symbols: list[str]) -> tuple[pd.DataFrame, pd.DataFra
             rank_rows.append({"symbol": symbol, "investor_name": f"{market.upper()} Holder {rank}",
                               "holding_pct": pct, "holdings_value": pct * 10_000_000, "rank": rank})
         report_rows.append({"symbol": symbol, "report_date": "20251231", "holder_name": f"{market.upper()} Holder 1",
-                            "holding_pct": weights[0], "currency": "HKD" if market == "hk" else "USD"})
+                            "holding_pct": weights[0], "currency": "HKD" if market == "hk" else "USD",
+                            "filing_type": "13F" if market == "us" else "Shareholder filing"})
     return tuple(map(pd.DataFrame, (conc_rows, top_rows, rank_rows, report_rows)))
 
 
@@ -126,6 +127,88 @@ def normalize_pct(series: pd.Series) -> pd.Series:
     if out.notna().any() and out.abs().max() <= 1:
         out *= 100
     return out
+
+
+def add_issuer_identity(panel: pd.DataFrame, source: pd.DataFrame, market: str) -> pd.DataFrame:
+    """Attach issuer identity so ADRs and local shares are not counted twice.
+
+    Prefer stable vendor identifiers. Fall back to market:symbol when the source
+    provides no issuer mapping; the fallback is deliberately conservative and
+    never guesses that two listings represent the same issuer.
+    """
+    source = source.copy()
+    symbol_col = choose_col(source, ["symbol", "ticker", "stock_code"])
+    if symbol_col is None:
+        panel["issuer_key"] = market + ":" + panel["symbol"]
+        panel["listing_type"] = "unknown"
+        panel["is_primary_listing"] = pd.NA
+        return panel
+    source["symbol"] = source[symbol_col].astype(str).str.upper()
+    issuer_col = choose_col(source, ["issuer_id", "company_id", "entity_id", "isin"])
+    type_col = choose_col(source, ["security_type", "listing_type", "instrument_type"])
+    adr_col = choose_col(source, ["is_adr", "adr_flag"])
+    primary_col = choose_col(source, ["is_primary_listing", "primary_listing", "is_primary"])
+    meta = source.drop_duplicates("symbol", keep="first").set_index("symbol")
+    if issuer_col:
+        issuer = meta[issuer_col].astype("string").str.strip()
+        issuer = issuer.where(issuer.notna() & issuer.ne(""))
+        panel["issuer_key"] = panel["symbol"].map(issuer)
+    else:
+        panel["issuer_key"] = pd.NA
+    panel["issuer_key"] = panel["issuer_key"].fillna(market + ":" + panel["symbol"])
+    if type_col:
+        panel["listing_type"] = panel["symbol"].map(meta[type_col]).astype("string").str.lower()
+    elif adr_col:
+        adr = panel["symbol"].map(meta[adr_col]).astype("boolean")
+        panel["listing_type"] = np.where(adr.fillna(False), "adr", "local")
+    else:
+        panel["listing_type"] = "unknown"
+    panel["is_primary_listing"] = (
+        panel["symbol"].map(meta[primary_col]).astype("boolean") if primary_col else pd.NA
+    )
+    return panel
+
+
+def deduplicate_issuers(panel: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Keep one economically representative listing for each mapped issuer."""
+    if panel.empty:
+        return panel, pd.DataFrame()
+    work = panel.copy()
+    work["_primary_priority"] = work["is_primary_listing"].astype("boolean").fillna(False).astype(int)
+    work["_local_priority"] = ~work["listing_type"].fillna("unknown").str.contains("adr", case=False)
+    work["_evidence_priority"] = pd.to_numeric(work["evidence_count"], errors="coerce").fillna(-1)
+    work = work.sort_values(
+        ["issuer_key", "_primary_priority", "_local_priority", "_evidence_priority", "market", "symbol"],
+        ascending=[True, False, False, False, True, True],
+    )
+    duplicate_issuer = work.duplicated("issuer_key", keep=False)
+    excluded = work.loc[duplicate_issuer & work.duplicated("issuer_key", keep="first")].copy()
+    excluded["exclusion_reason"] = "ADR/local duplicate; retained primary or local listing"
+    kept = work.drop_duplicates("issuer_key", keep="first").copy()
+    cleanup = ["_primary_priority", "_local_priority", "_evidence_priority"]
+    return kept.drop(columns=cleanup), excluded.drop(columns=cleanup)
+
+
+def normalize_report_timing(report: pd.DataFrame, market: str) -> pd.DataFrame:
+    """Add information-availability dates; US 13F data becomes usable after 45 days."""
+    report = report.copy()
+    if report.empty:
+        for col in ("market", "source_period_end", "availability_date", "disclosure_lag_days",
+                    "point_in_time_eligible"):
+            report[col] = pd.Series(dtype="object")
+        return report
+    report.insert(0, "market", market)
+    date_col = choose_col(report, ["holding_date", "report_date", "period_end", "date"])
+    filing_col = choose_col(report, ["filing_type", "report_type", "form_type"])
+    source_date = pd.to_datetime(report[date_col].astype(str), errors="coerce") if date_col else pd.NaT
+    filing = report[filing_col].astype("string") if filing_col else pd.Series("", index=report.index)
+    is_13f = filing.str.contains("13F", case=False, na=False) & market.eq("us") if isinstance(market, pd.Series) else filing.str.contains("13F", case=False, na=False) & (market == "us")
+    lag = np.where(is_13f, 45, 0)
+    report["source_period_end"] = source_date
+    report["disclosure_lag_days"] = lag
+    report["availability_date"] = source_date + pd.to_timedelta(lag, unit="D")
+    report["point_in_time_eligible"] = report["availability_date"].notna()
+    return report
 
 
 def normalize(market: str, concentration: pd.DataFrame, top20: pd.DataFrame,
@@ -208,6 +291,7 @@ def normalize(market: str, concentration: pd.DataFrame, top20: pd.DataFrame,
     panel["data_confidence"] = pd.cut(
         evidence_count, bins=[-1, 1, 3, 4], labels=["low", "medium", "high"]
     )
+    panel = add_issuer_identity(panel, concentration, market)
     return panel, normalized_rank.sort_values(["symbol", "rank"], na_position="last")
 
 
@@ -240,21 +324,29 @@ def main() -> None:
         panel, normalized_rank = normalize(market, concentration, top20, ranking)
         panels.append(panel)
         rankings.append(normalized_rank)
-        report = report.copy()
-        report.insert(0, "market", market)
-        reports.append(report)
+        reports.append(normalize_report_timing(report, market))
     panel = pd.concat(panels, ignore_index=True) if panels else pd.DataFrame()
     ranking = pd.concat(rankings, ignore_index=True) if rankings else pd.DataFrame()
     report = pd.concat(reports, ignore_index=True) if reports else pd.DataFrame()
+    panel, issuer_exclusions = deduplicate_issuers(panel)
+    if not ranking.empty and not panel.empty:
+        kept_keys = pd.MultiIndex.from_frame(panel[["market", "symbol"]])
+        ranking_keys = pd.MultiIndex.from_frame(ranking[["market", "symbol"]])
+        ranking = ranking.loc[ranking_keys.isin(kept_keys)].copy()
     panel.to_csv(out / "institutional_concentration_panel.csv", index=False, encoding="utf-8-sig")
     ranking.to_csv(out / "investor_ranking.csv", index=False, encoding="utf-8-sig")
     report.to_csv(out / "shareholder_reports.csv", index=False, encoding="utf-8-sig")
+    issuer_exclusions.to_csv(out / "issuer_dedup_exclusions.csv", index=False, encoding="utf-8-sig")
     quality = {
         "status": "PASS" if not panel.empty and not panel.duplicated(["market", "symbol"]).any() else "FAIL",
         "mode": args.mode, "panel_rows": len(panel), "ranking_rows": len(ranking),
         "missing_concentration": int(panel.get("concentration_pct", pd.Series(dtype=float)).isna().sum()),
         "data_anomaly_rows": int(panel.get("has_data_anomaly", pd.Series(dtype=bool)).sum()),
         "duplicate_keys": int(panel.duplicated(["market", "symbol"]).sum()) if not panel.empty else 0,
+        "duplicate_issuers_excluded": int(len(issuer_exclusions)),
+        "issuer_identity_fallback_rows": int(panel["issuer_key"].str.contains(":", regex=False).sum()) if not panel.empty else 0,
+        "thirteen_f_rows": int((report.get("disclosure_lag_days", pd.Series(dtype=float)) == 45).sum()),
+        "thirteen_f_lag_days": 45,
         "warnings": warnings,
         "sdk_version": importlib.metadata.version("panda_data") if args.mode == "api" else None,
         "markets": markets,

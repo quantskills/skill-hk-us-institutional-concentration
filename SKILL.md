@@ -18,8 +18,8 @@ Complete all checks below before presenting a conclusion. Record each result in
 an evidence ledger; a silent assumption does not count as a completed check:
 
 1. Confirm market, universe, observation date, holder definition, and requested use.
-2. Verify whether each API value is a current snapshot or historically dated; never backfill a current snapshot into a historical test.
-3. Report universe size, non-null coverage, duplicate handling, and source-data anomaly counts.
+2. Verify whether each API value is a current snapshot or historically dated; apply the 45-calendar-day 13F availability lag and never backfill a current snapshot into a historical test.
+3. Report universe size, non-null coverage, ADR/local-share issuer deduplication, fallback identities, and source-data anomaly counts.
 4. Check percentage scale, HHI range, maximum-holder share, and top-20 consistency.
 5. Separate ownership breadth from holder dominance and evidence confidence.
 6. Treat `data_anomaly` and `insufficient_data` as non-rankable states, not low-risk observations.
@@ -52,12 +52,13 @@ For a single-stock lookup, retain it internally and surface every failure.
 ## Workflow
 
 1. Normalize symbols: keep Hong Kong symbols as `NNNN.HK`; keep US tickers uppercase.
-2. Read [references/api-map.md](references/api-map.md) before changing API calls or field mappings. Read [references/runtime.md](references/runtime.md) when installing the SDK or configuring credentials.
+2. Read [references/api-map.md](references/api-map.md) before changing API calls or field mappings. Read [references/methodology.md](references/methodology.md) before issuer deduplication or point-in-time use. Read [references/runtime.md](references/runtime.md) when installing the SDK or configuring credentials.
 3. Run `scripts/build_panel.py`. Use `--mode mock` for deterministic offline verification and `--mode api` for PandaAI data.
 4. Treat the API aggregate concentration value as breadth. Separately compute top-holder dominance and holder HHI from ranking rows.
 5. Classify the observed structure as `broad_institutional`, `dominant_holder`, or `fragmented_or_mixed`; do not collapse these states into a single good/bad score.
-6. Report `data_confidence` from metric coverage. Preserve raw extracts and never silently convert missing values to zero.
-7. Run `scripts/harness.py --output-dir <dir>` and require `PASS` before delivery.
+6. Deduplicate mapped ADR/local listings at issuer level, retain the primary/local listing, and write exclusions. Report `data_confidence` from metric coverage. Preserve raw extracts and never silently convert missing values to zero.
+7. Treat US 13F holdings as available only 45 calendar days after period end; use `availability_date` for historical joins.
+8. Run `scripts/harness.py --output-dir <dir>` and require `PASS` before delivery.
 
 ## Commands
 
@@ -86,6 +87,7 @@ add `--include-shareholder-reports` only when that detail is required.
 - `institutional_concentration_panel.csv`: one row per market and symbol, including structure and evidence-confidence labels.
 - `investor_ranking.csv`: normalized ranked-holder detail.
 - `shareholder_reports.csv`: dated shareholder-report detail when requested.
+- `issuer_dedup_exclusions.csv`: ADR/local listings removed after issuer-level resolution.
 - `raw_*.csv`: unmodified API extracts.
 - `quality_report.json`: row counts, coverage, duplicates, and warnings.
 - `harness_report.json`: delivery acceptance result.
@@ -109,4 +111,4 @@ economic laws.
 Do not call the task complete unless `harness.py` passes, universe and anomaly
 counts are reported, every structure label is traceable to visible metrics, the
 observation-date limitation is explicit, and any return claim uses genuinely
-dated ownership snapshots.
+dated ownership snapshots with the 13F availability lag.

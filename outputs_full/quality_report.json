@@ -2,15 +2,17 @@
   "status": "PASS",
   "mode": "api",
   "panel_rows": 9938,
-  "ranking_rows": 163179,
+  "ranking_rows": 163160,
   "missing_concentration": 358,
   "data_anomaly_rows": 1290,
   "duplicate_keys": 0,
+  "duplicate_issuers_excluded": 0,
+  "issuer_identity_fallback_rows": 9938,
+  "thirteen_f_rows": 0,
+  "thirteen_f_lag_days": 45,
   "warnings": [
-    "Skipped HK shareholder reports in full-universe mode; use --include-shareholder-reports to request them.",
-    "Skipped US shareholder reports in full-universe mode; use --include-shareholder-reports to request them."
+    "Rebuilt from preserved raw extracts; issuer fallback means ADR/local pairs cannot be inferred without stable issuer metadata."
   ],
-  "sdk_version": "0.0.12",
   "markets": [
     "hk",
     "us"

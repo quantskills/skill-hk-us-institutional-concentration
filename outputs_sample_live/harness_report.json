@@ -10,6 +10,10 @@
     "anomalies_explicit": true,
     "valid_structure": true,
     "valid_confidence": true,
-    "quality_report_pass": true
+    "quality_report_pass": true,
+    "unique_issuer_keys": true,
+    "thirteen_f_lag_documented": true,
+    "report_timing_columns": true,
+    "thirteen_f_lag_applied": true
   }
 }
