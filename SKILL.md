@@ -112,3 +112,7 @@ Do not call the task complete unless `harness.py` passes, universe and anomaly
 counts are reported, every structure label is traceable to visible metrics, the
 observation-date limitation is explicit, and any return claim uses genuinely
 dated ownership snapshots with the 13F availability lag.
+
+## Pandadata compatibility
+
+[Pandadata 1.0.6 compatibility](references/pandadata-compatibility.md) — exact SDK baseline, validation scope, and shared guidance for all supported agent runtimes.

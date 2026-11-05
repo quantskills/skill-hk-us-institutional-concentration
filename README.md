@@ -66,10 +66,10 @@ skill-hk-us-institutional-concentration/
 - Python 3.10+
 - `pandas`
 - `numpy`
-- 实盘 API 模式需要 / Live API mode requires `panda_data>=0.0.9,<0.1`
+- 实盘 API 模式需要 / Live API mode requires `panda_data==1.0.6`
 
 ```bash
-pip install "panda_data>=0.0.9,<0.1"
+pip install "panda_data==1.0.6"
 ```
 
 ## 身份认证与安全 / Authentication & Security
@@ -179,3 +179,6 @@ US 13F data uses period-end plus 45 calendar days as its availability date; hist
 
 公开发布前请添加适用的开源许可证。  
 Add the intended open-source license before public distribution.
+
+
+Pandadata 兼容维护：[abgyjaguo](https://github.com/abgyjaguo)，保留原项目作者署名。
